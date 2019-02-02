@@ -7,9 +7,9 @@ package com.suchaos.jvm.classloader;
  * -XX:+TraceClassLoading, 用于追踪类的加载信息并打印出来
  *
  * JVM 参数：
- *     -XX:+<option> 表示开启 option 选项
- *     -XX:-<option> 表示关闭 option 选项
- *     -XX:<option>=<value> 表示将 option 选项的值设置为 value
+ *     -XX:+option 表示开启 option 选项
+ *     -XX:-option 表示关闭 option 选项
+ *     -XX:option=value 表示将 option 选项的值设置为 value
  *
  * @author suchao
  * @date 2019/2/2

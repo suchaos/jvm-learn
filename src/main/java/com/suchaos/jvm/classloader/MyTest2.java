@@ -12,10 +12,12 @@ package com.suchaos.jvm.classloader;
  * E:\learn\jvm_lecture\target\classes>javap -c com.suchaos.jvm.classloader.MyTest2
  *
  * 助记符：
- * ldc 表示将 int, float 或是 String 类型的常量值从常量池推送至栈顶
+ * 官网：https://docs.oracle.com/javase/specs/jvms/se8/html/jvms-6.html
+ *
+ * iconst_1 表示将 int 类型 1 推送至栈顶 （-1 ~ 5 , iconst_m1 ~ iconst_0 ~ iconst_5, 6的话，变为 bipush 6）
  * bipush 表示将单字节 （-128 ~ 127）的常量值推送到栈顶
  * sipush 表示将一个短整形常量值（-32768 ~ 32767）推送到栈顶
- * iconst_1 表示将 int 类型 1 推送至栈顶 （-1 ~ 5 , iconst_m1 ~ iconst_1 ~ iconst_5, 6的话，变为 bipush 6）
+ * ldc 表示将 int, float 或是 String 类型的常量值从常量池推送至栈顶
  *
  * @author suchao
  * @date 2019/2/2
