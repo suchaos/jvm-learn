@@ -12,7 +12,7 @@ import java.lang.reflect.Proxy;
 public class Client {
     public static void main(String[] args) {
 
-        System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
+        //System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
 
         RealSubject rs = new RealSubject();
         InvocationHandler ds = new DynamicSubject(rs);

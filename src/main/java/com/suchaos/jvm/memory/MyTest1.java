@@ -13,10 +13,12 @@ import java.util.List;
  */
 public class MyTest1 {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         List<MyTest1> list = new ArrayList<>();
         while (true) {
             list.add(new MyTest1());
+            Thread.sleep(100);
+            System.gc();
         }
     }
 }
